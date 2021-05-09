@@ -72,6 +72,8 @@ class CryptoDataDownload:
             df["date"] = pd.to_datetime(df["date"])
         elif "h" in timeframe:
             df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d %H:%M:%S")
+        elif "m" in timeframe:
+            df["date"] = pd.to_datetime(df["date"], format="%Y-%m-%d %H:%M:%S")
 
         df = df.set_index("date")
         df.columns = [name.lower() for name in df.columns]
