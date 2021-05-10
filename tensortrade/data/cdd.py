@@ -111,7 +111,7 @@ class CryptoDataDownload:
         filename = "{}_{}{}_{}.csv".format("gemini", quote_symbol, base_symbol, timeframe)
         df = pd.read_csv(self.url + filename, skiprows=1)
         df = df[::-1]
-        df = df.drop(["Symbol", "Unix Timestamp"], axis=1)
+        df = df.drop(["symbol", "Unix Timestamp"], axis=1)
         df.columns = [name.lower() for name in df.columns]
         df = df.set_index("date")
         df = df.reset_index()
