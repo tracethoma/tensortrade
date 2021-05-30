@@ -141,6 +141,8 @@ LINK = Instrument('LINK', 8, 'Chainlink')
 ATOM = Instrument('ATOM', 8, 'Cosmos')
 DAI = Instrument('DAI', 8, 'Dai')
 USDT = Instrument('USDT', 8, 'Tether')
+ADA = Instrument('ADA', 8, 'Cardano')
+USDC = Instrument('USDC', 8, 'US Dollar Coin')
 
 # FX
 USD = Instrument('USD', 2, 'U.S. Dollar')
